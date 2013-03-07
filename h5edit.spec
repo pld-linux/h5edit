@@ -8,9 +8,10 @@ License:	BSD-like, changed sources must be marked
 Source0:	http://www.hdfgroup.org/ftp/HDF5/projects/jpss/h5edit/%{name}-%{version}.tar.gz
 # Source0-md5:	28703a32c35642fcaacc5511e66e5388
 URL:		http://www.hdfgroup.org/projects/npoess/h5edit_index.html
-BuildRequires:	hdf5-devel
+BuildRequires:	hdf5-devel >= 1.8.9
 BuildRequires:	szip-devel
 BuildRequires:	zlib-devel
+Requires:	hdf5 >= 1.8.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
