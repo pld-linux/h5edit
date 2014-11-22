@@ -1,12 +1,12 @@
 Summary:	HDF5 file editor
 Summary(pl.UTF-8):	Edytor plików HDF5
 Name:		h5edit
-Version:	1.3.0
+Version:	1.3.1
 Release:	1
 Group:		Applications/File
 License:	BSD-like, changed sources must be marked
 Source0:	http://www.hdfgroup.org/ftp/HDF5/projects/jpss/h5edit/%{name}-%{version}.tar.gz
-# Source0-md5:	29098d17a0b468c341f3dca18a5bf820
+# Source0-md5:	10e1d07577c37a9ecb03a9867c365968
 URL:		http://www.hdfgroup.org/projects/npoess/h5edit_index.html
 BuildRequires:	hdf5-devel >= 1.8.9
 BuildRequires:	szip-devel
