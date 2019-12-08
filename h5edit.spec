@@ -7,6 +7,7 @@ Group:		Applications/File
 License:	BSD-like, changed sources must be marked
 Source0:	http://www.hdfgroup.org/ftp/HDF5/projects/jpss/h5edit/%{name}-%{version}.tar.gz
 # Source0-md5:	10e1d07577c37a9ecb03a9867c365968
+Patch0:		types.patch
 URL:		http://www.hdfgroup.org/projects/npoess/h5edit_index.html
 BuildRequires:	hdf5-devel >= 1.8.9
 BuildRequires:	szip-devel
@@ -33,6 +34,7 @@ pakietu).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 # need _LARGEFILE64_SOURCE for off64_t when hdf5 is built with LFS
