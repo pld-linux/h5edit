@@ -34,7 +34,7 @@ pakietu).
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # need _LARGEFILE64_SOURCE for off64_t when hdf5 is built with LFS
